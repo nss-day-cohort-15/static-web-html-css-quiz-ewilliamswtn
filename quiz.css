@@ -57,7 +57,8 @@ End CSS Reset, Start Personal Formatting
   display: inline-block;
   border: solid 1px lightblue;
   width: 30%;
-  height: 500px;
+  min-height: 500px;
+  height: auto;
   vertical-align: top;
   margin: 5px;
   padding: none;
