@@ -1,0 +1,155 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+End CSS Reset, Start Personal Formatting
+*/
+
+.fbox {
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-around;
+}
+
+.hatCard {
+  border: solid 1px lightblue;
+  width: 30%;
+  margin: 10px;
+}
+
+.cardTitle {
+  padding: 10px;
+  border: dotted 1px lightgray;
+  text-align: center;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  font-size: 2vw;
+  height: 100px;
+}
+
+
+.bold {
+  font-size: .8em;
+  font-weight: bold;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
+.av {
+  background-color: darkgrey;
+  color: yellow;
+  margin: 15px 0px;
+  padding: 3px;
+}
+
+/*.textWrapper {
+  text-align: justify;
+}*/
+
+img {
+  height: 150px;
+  display: block;
+  margin: 5px auto;
+}
+
+h2, h3 {
+  margin-left: 3px;
+  padding: 4px;
+}
+
+footer {
+  font-size: .7em;
+}
+
+@media (min-width: 701px) {
+  .fbox article:nth-of-type(4) {
+    margin-right: auto;
+  }
+}
+
+
+@media (max-width: 700px) {
+  .hatCard {
+    min-width: 45%;
+  }
+
+  .cardTitle {
+    font-size: 3.5vw;
+  }
+
+  .description {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .hatCard {
+    display: block;
+    min-width: 95%;
+  }
+
+  .cardTitle {
+    font-size: 5.5vw;
+  }
+
+  .description {
+    font-size: 4.5vw;
+  }
+}
+
+
