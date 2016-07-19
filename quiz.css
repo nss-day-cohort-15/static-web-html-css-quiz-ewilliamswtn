@@ -51,7 +51,7 @@ table {
 End CSS Reset, Start Personal Formatting
 */
 
-#fbox {
+.fbox {
   width: 100vw;
   display: flex;
   flex-flow: row wrap;
@@ -97,9 +97,9 @@ End CSS Reset, Start Personal Formatting
   padding: 3px;
 }
 
-.textWrapper {
+/*.textWrapper {
   text-align: justify;
-}
+}*/
 
 img {
   height: 150px;
@@ -117,7 +117,7 @@ footer {
 }
 
 @media (min-width: 701px) {
-  #fbox article:nth-of-type(4) {
+  .fbox article:nth-of-type(4) {
     margin-right: auto;
   }
 }
@@ -151,3 +151,5 @@ footer {
     font-size: 4.5vw;
   }
 }
+
+
